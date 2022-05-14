@@ -129,9 +129,11 @@
 	<input type="submit" name="sign" value="Calculate">
 	<p><b>Стоимость выставки: ${result}</b></p>
 	</form>	
-<form>		
+<form action="${pageContext.request.contextPath}/Information" method="post">		
 		
-		<input type="submit" name="sign" value="Informstion">
+		<input type="submit" name="sign" value="Information">
+		</form>	
+		<form>	
 		<input type="submit" name="sign" value="Create PDF">
 	</form>	
 
