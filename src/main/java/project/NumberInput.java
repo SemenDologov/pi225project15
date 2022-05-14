@@ -12,7 +12,7 @@ public final class NumberInput extends lineInput {
 	@Override
 	public void checkinput() throws LessThanZeroException, MoneyInputException, PercentException{
 		
-		Double value = Double.parseDouble(getLabel());
+		Double value = Double.parseDouble(label);
 		
 		if (value < 0) {
 			throw new LessThanZeroException();

@@ -126,7 +126,7 @@ public class Calc extends HttpServlet {
 		} catch (MoneyInputException e) {
 			request.getRequestDispatcher("/MoreThanTwo.jsp").forward(request, response);
 		} catch (PercentException e) {
-			request.getRequestDispatcher("/Persent.jsp").forward(request, response);
+			request.getRequestDispatcher("/Percent.jsp").forward(request, response);
 		} catch (WholeNumberException e) {
 			request.getRequestDispatcher("/NotanInteger.jsp").forward(request, response);
 		} catch (NumberFormatException e) {
