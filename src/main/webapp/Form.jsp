@@ -128,8 +128,8 @@
 		</form>
 		
 	<form>
-	<input type="submit" name="sign" value="Calculate">
-	<p><b>Стоимость выставки: ${result}</b></p>
+	<p><input type="submit" name="sign" value="Calculate">
+	<b>Стоимость выставки: ${result}</b></p>
 	</form>	
 <form>		
 		
