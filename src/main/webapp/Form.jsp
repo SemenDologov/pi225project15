@@ -127,8 +127,12 @@
 		<input type="text" name="20" id="20" value="${twenteeth}">
 		</form>
 		
+	<form>
+	<input type="submit" name="sign" value="Calculate">
+	<p><b>Стоимость выставки: ${result}</b></p>
+	</form>	
 <form>		
-		<input type="submit" name="sign" value="Calculate">
+		
 		<input type="submit" name="sign" value="Informstion">
 		<input type="submit" name="sign" value="Create PDF">
 	</form>	
