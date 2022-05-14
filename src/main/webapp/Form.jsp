@@ -5,14 +5,16 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet" href="Style.css" type="text/css">
 <title>Калькулятор организации выставки</title>
 </head>
 <body>
 <h1>Calculation</h1>
-	<form action="${pageContext.request.contextPath}/JavaCalc" method="post">	
-	
+	<form action="${pageContext.request.contextPath}/JavaCalc" method="post">
+
 		<label for="1">Продолжительность выставки:</label>
 		<input type="text" name="1" id="1" value="${first}">
+				
 </form>
 
 <p><b>=Затраты на творческую подготовку выставки=</b></p>	
