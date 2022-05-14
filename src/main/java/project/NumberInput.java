@@ -1,18 +1,18 @@
 package project;
 
-import javax.swing.JPanel;
-
-
 public final class NumberInput extends lineInput {
 	
-	public NumberInput(String label, String unit, int boundX, int boundY, JPanel panel) {
-		super(label, unit, boundX, boundY, panel);
+	private String label;
+	
+	public NumberInput(String label) {
+		super(label);
+		setLabel(label);
 }
 	
 	@Override
 	public void checkinput() throws LessThanZeroException, MoneyInputException, PercentException{
 		
-		Double value = Double.parseDouble(getTextfield().getText());
+		Double value = Double.parseDouble(getLabel());
 		
 		if (value < 0) {
 			throw new LessThanZeroException();
@@ -22,5 +22,13 @@ public final class NumberInput extends lineInput {
 		if (dstring[1].length() > 2) {
 			throw new MoneyInputException();
 		}
+	}
+	
+	public String getLabel() {
+		return label;
+	}
+
+	public void setLabel(String label) {
+		this.label = label;
 	}
 }

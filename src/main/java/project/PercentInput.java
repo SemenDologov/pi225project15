@@ -1,18 +1,18 @@
 package project;
 
-import javax.swing.JPanel;
-
-
 public final class PercentInput extends lineInput {
 	
-	public PercentInput(String label, String unit, int boundX, int boundY, JPanel panel) {
-		super(label, unit, boundX, boundY, panel);
+	private String label;
+	
+	public PercentInput(String label) {
+		super(label);
+		setLabel(label);
 	}
 
 	@Override
 	public void checkinput() throws LessThanZeroException, PercentException, WholeNumberException {
 		
-		Double value = Double.parseDouble(getTextfield().getText());
+		Double value = Double.parseDouble(getLabel());
 		
 		if (value < 0) {
 			throw new LessThanZeroException();
@@ -23,5 +23,13 @@ public final class PercentInput extends lineInput {
 		if (value % 1 !=0) {
 			throw new WholeNumberException();
 		}
+	}
+	
+	public String getLabel() {
+		return label;
+	}
+
+	public void setLabel(String label) {
+		this.label = label;
 	}
 }
