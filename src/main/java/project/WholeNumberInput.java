@@ -12,7 +12,7 @@ public final class WholeNumberInput extends lineInput{
 	@Override
 	void checkinput() throws WholeNumberException {
 		
-		Double value = Double.parseDouble(getLabel());
+		Double value = Double.parseDouble(label);
 		
 		if (value % 1 !=0) {
 			throw new WholeNumberException();
