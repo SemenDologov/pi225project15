@@ -43,7 +43,7 @@ public class TestCalculation {
 	
 	@Test
 	public void testService() {
-		calculate service = new Service(1.0, 1.0, 1.0, 1.0, 1.0);
+		calculate service = new Service(2.0, 1.0, 1.0, 1.0, 1.0);
 		Assert.assertEquals(1.0, service.calculation(), 1);
 	}
 	
