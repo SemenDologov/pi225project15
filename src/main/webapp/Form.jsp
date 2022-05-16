@@ -111,9 +111,6 @@
 		
 		<input type="submit" name="sign" value="Information">
 		</form>	
-		<form>	
-		<input type="submit" name="sign" value="Create PDF">
-	</form>	
 
 	</body>
 </html>
